@@ -125,7 +125,7 @@ function App() {
            <span className="brand-name">RE_COMP</span>
         </Link>
          <img src={logo} alt="Logo" className="logo" />
-         <img src={streakIcon} alt="streak logo" className="streak" />
+         
 
         </div>
       </header>
