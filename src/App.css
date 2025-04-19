@@ -43,7 +43,7 @@ body {
 .logo {
   height: 80px;
   width: auto;
-  margin-right:1950px; /* No space between logo and brand name */
+  margin-right:5000px; /* No space between logo and brand name */
 }
 
 .brand-name {
