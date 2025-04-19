@@ -6,7 +6,6 @@ import React from 'react'; // Reuse existing styles
 import logo from './logo.png';
 import fireIcon from './assets/fire.png';
 import workoutIcon from './assets/workout.png';
-import streakIcon from './assets/Small.svg';
 import { Link } from 'react-router-dom'; 
 import frontImg from './human/front.png';
 import backImg from './human/back.png';
@@ -225,12 +224,12 @@ function Workout() {
   }
 
   const muscle_cardPosition ={
-    x:1110,
+    x:1200,
     y: 450,
   }
 
   const headingPosition = {
-    x: 550,
+    x: 620,
     y: 30, // a little above the muscle card y=100
   };
   
@@ -253,7 +252,7 @@ function Workout() {
            <span className="brand-name">RE_COMP</span>
         </Link>
          <img src={logo} alt="Logo" className="logo" />
-         <img src={streakIcon} alt="streak logo" className="streak" />
+        
         </div>
       </header>
 

@@ -296,7 +296,7 @@
   .muscle_card-svg {
     position: fixed;
     top: 500px;          /* margin from top */
-    right: 20px;        /* margin from right */
+    right: 5px;        /* margin from right */
     width: 1000px;       /* optional: set width */
     height: auto;       /* maintain aspect ratio */
     z-index: 1000;      /* keep it on top of most elements */

@@ -6,7 +6,6 @@ import 'react-circular-progressbar/dist/styles.css';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import fireIcon from './assets/fire.png';
 import workoutIcon from './assets/workout.png';
-import streakIcon from './assets/Small.svg';
 import { Link } from 'react-router-dom';
 import React from 'react'; 
 
