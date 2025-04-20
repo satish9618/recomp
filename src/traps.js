@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactPlayer from 'react-player';
 
 const style = `
-.chest-container {
+.traps-container {
   background-color:rgb(6, 6, 6);
   color: white;
   min-height: 30vh;  /* Increased height */
@@ -21,7 +21,7 @@ const style = `
  /* Allows scrolling when the content exceeds the container's size */
 }
 
-.chest-container::-webkit-scrollbar {
+.traps-container::-webkit-scrollbar {
   display: none;                 /* Chrome, Safari */
 }
 
@@ -63,7 +63,7 @@ const style = `
   transform: scale(1.02);
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
 }
-  
+
 .color-circle {
   width: 50px;
   height: 40px;
@@ -263,24 +263,25 @@ const ExerciseSection = ({ title, exercises, onExerciseClick }) => (
 
 
 
-const Chest = () => {
+const Traps = () => {
 
   const [selectedExercise, setSelectedExercise] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
 
-  const ChestExercises = {
-        "Upper Chest": [
-      { name: "Incline Dumbbell Press", color: "#ffff00" , videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared" , effect:"3"}, // yellow
-      { name: "Incline Barbell Press", color: "#ffff00", videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'4'},  // yellow
-    ],
-    "Middle Chest": [
-      { name: "Flat Bench Press", color: "#16e98b",videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'4' },       // green
-      { name: "Flat Barbell Press", color: "#16e98b",videoUrl:"https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'3'},     // green
-    ],
-    "Lower Chest": [
-      { name: "Decline dumbbell press", color: "#ff0000",videoUrl:"https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'5'}, // red
-      { name: "Decline cable flies", color: "#ff0000", videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'4' },    // red
-    ],
+  const TrapsExercises = {
+    
+      " ": [
+        { name: "Dumbbell Shrugs", color: "#ffff00", videoUrl: "https://youtu.be/9efgcAjQe7E", effect: "3" },  // yellow
+        { name: "Barbell Shrugs", color: "#ffff00", videoUrl: "https://youtu.be/cJRVVxmytaM", effect: "4" }   // yellow
+      ],
+      "": [
+        { name: "Face Pulls", color: "#16e98b", videoUrl: "https://youtu.be/rep-qVOkqgk", effect: "4" },       // green
+        { name: "Reverse Cable Flys", color: "#16e98b", videoUrl: "https://youtu.be/mwRl9Gzv7O4", effect: "3" } // green
+      ],
+      "  ": [
+        { name: "Incline Y Raise", color: "#ff0000", videoUrl: "https://youtu.be/0zPj7tV6L44", effect: "5" },  // red
+        { name: "Cable Scapular Depression", color: "#ff0000", videoUrl: "https://youtu.be/JJvYigv31sM", effect: "4" } // red
+      ]
 
   };
 
@@ -295,9 +296,9 @@ const Chest = () => {
   
     <>
       <style>{style}</style>
-      <div className="chest-container">
-        <h1 className="main-title">Chest Exercises</h1>
-        {Object.entries(ChestExercises).map(([section, exercises]) => (
+      <div className="traps-container">
+        <h1 className="main-title">Traps Exercises</h1>
+        {Object.entries(TrapsExercises).map(([section, exercises]) => (
           <ExerciseSection
             key={section}
             title={section}
@@ -315,4 +316,4 @@ const Chest = () => {
   );
 };
 
-export default Chest;
+export default Traps;

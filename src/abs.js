@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactPlayer from 'react-player';
 
 const style = `
-.chest-container {
+.abs-container {
   background-color:rgb(6, 6, 6);
   color: white;
   min-height: 30vh;  /* Increased height */
@@ -21,7 +21,7 @@ const style = `
  /* Allows scrolling when the content exceeds the container's size */
 }
 
-.chest-container::-webkit-scrollbar {
+.abs-container::-webkit-scrollbar {
   display: none;                 /* Chrome, Safari */
 }
 
@@ -63,7 +63,7 @@ const style = `
   transform: scale(1.02);
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
 }
-  
+
 .color-circle {
   width: 50px;
   height: 40px;
@@ -263,26 +263,26 @@ const ExerciseSection = ({ title, exercises, onExerciseClick }) => (
 
 
 
-const Chest = () => {
+const Abs = () => {
 
   const [selectedExercise, setSelectedExercise] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
 
-  const ChestExercises = {
-        "Upper Chest": [
-      { name: "Incline Dumbbell Press", color: "#ffff00" , videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared" , effect:"3"}, // yellow
-      { name: "Incline Barbell Press", color: "#ffff00", videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'4'},  // yellow
+  const AbsExercises = {
+    "Upper Abs": [
+      { name: "Crunches", color: "#ffff00", videoUrl: "https://youtu.be/Xyd_fa5zoEU", effect: "3" }, // yellow
+      { name: "Cable Crunch", color: "#ffff00", videoUrl: "https://youtu.be/4Su3kQ9e1P8", effect: "4" } // yellow
     ],
-    "Middle Chest": [
-      { name: "Flat Bench Press", color: "#16e98b",videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'4' },       // green
-      { name: "Flat Barbell Press", color: "#16e98b",videoUrl:"https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'3'},     // green
+    "Lower Abs": [
+      { name: "Leg Raises", color: "#16e98b", videoUrl: "https://youtu.be/l4kQd9eWclE", effect: "4" }, // green
+      { name: "Reverse Crunches", color: "#16e98b", videoUrl: "https://youtu.be/Hyv-f4xplFA", effect: "3" } // green
     ],
-    "Lower Chest": [
-      { name: "Decline dumbbell press", color: "#ff0000",videoUrl:"https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'5'}, // red
-      { name: "Decline cable flies", color: "#ff0000", videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'4' },    // red
-    ],
-
+    "Obliques": [
+      { name: "Russian Twists", color: "#ff0000", videoUrl: "https://youtu.be/wkD8rjkodUI", effect: "5" }, // red
+      { name: "Side Plank with Hip Dips", color: "#ff0000", videoUrl: "https://youtu.be/1f8yoFFdkcY", effect: "4" } // red
+    ]
   };
+  
 
   const handleExerciseClick = (exercise) => {
     setSelectedExercise(exercise);
@@ -295,9 +295,9 @@ const Chest = () => {
   
     <>
       <style>{style}</style>
-      <div className="chest-container">
-        <h1 className="main-title">Chest Exercises</h1>
-        {Object.entries(ChestExercises).map(([section, exercises]) => (
+      <div className="abs-container">
+        <h1 className="main-title">Abs Exercises</h1>
+        {Object.entries(AbsExercises).map(([section, exercises]) => (
           <ExerciseSection
             key={section}
             title={section}
@@ -315,4 +315,4 @@ const Chest = () => {
   );
 };
 
-export default Chest;
+export default Abs;

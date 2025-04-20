@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactPlayer from 'react-player';
 
 const style = `
-.chest-container {
+.calves-container {
   background-color:rgb(6, 6, 6);
   color: white;
   min-height: 30vh;  /* Increased height */
@@ -21,7 +21,7 @@ const style = `
  /* Allows scrolling when the content exceeds the container's size */
 }
 
-.chest-container::-webkit-scrollbar {
+.calves-container::-webkit-scrollbar {
   display: none;                 /* Chrome, Safari */
 }
 
@@ -63,7 +63,7 @@ const style = `
   transform: scale(1.02);
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
 }
-  
+
 .color-circle {
   width: 50px;
   height: 40px;
@@ -263,26 +263,33 @@ const ExerciseSection = ({ title, exercises, onExerciseClick }) => (
 
 
 
-const Chest = () => {
+const Calves= () => {
 
   const [selectedExercise, setSelectedExercise] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
 
-  const ChestExercises = {
-        "Upper Chest": [
-      { name: "Incline Dumbbell Press", color: "#ffff00" , videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared" , effect:"3"}, // yellow
-      { name: "Incline Barbell Press", color: "#ffff00", videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'4'},  // yellow
-    ],
-    "Middle Chest": [
-      { name: "Flat Bench Press", color: "#16e98b",videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'4' },       // green
-      { name: "Flat Barbell Press", color: "#16e98b",videoUrl:"https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'3'},     // green
-    ],
-    "Lower Chest": [
-      { name: "Decline dumbbell press", color: "#ff0000",videoUrl:"https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'5'}, // red
-      { name: "Decline cable flies", color: "#ff0000", videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'4' },    // red
-    ],
+  const CalvesExercises = {
+    
+        "": [
+        { name: "Seated Calf Raise (Machine)", color: "#ffff00", videoUrl: "https://youtu.be/YyvSfVjQeL0", effect: "3" },     // yellow
+        { name: "Smith Machine Seated Calf Raise", color: "#ffff00", videoUrl: "https://youtu.be/TJ4QxGjt_Zc", effect: "4" }, // yellow
+        { name: "Dumbbell Seated Calf Raise", color: "#16e98b", videoUrl: "https://youtu.be/OU_6U2Qz3XI", effect: "4" }       // green
+        ],
 
-  };
+        " ": [
+        { name: "Standing Calf Raise (Bodyweight)", color: "#ff0000", videoUrl: "https://youtu.be/I8nZBYy4l54", effect: "5" },  // red
+        { name: "Barbell Standing Calf Raise", color: "#ff0000", videoUrl: "https://youtu.be/5F1b9yQGajM", effect: "4" },       // red
+        { name: "Machine Standing Calf Raise", color: "#16e98b", videoUrl: "https://youtu.be/wLrVM7S01Xc", effect: "4" }        // green
+        ],
+
+        "  ": [
+        { name: "Donkey Calf Raise", color: "#ff0000", videoUrl: "https://youtu.be/68QbFZME5vw", effect: "5" },                // red
+        { name: "Jump Rope", color: "#16e98b", videoUrl: "https://youtu.be/c4DAnQ6DtF8", effect: "3" },                        // green
+        { name: "Single-Leg Calf Raise", color: "#ffff00", videoUrl: "https://youtu.be/TuNqJpjD30U", effect: "4" }             // yellow
+        ]
+
+
+    };
 
   const handleExerciseClick = (exercise) => {
     setSelectedExercise(exercise);
@@ -295,9 +302,9 @@ const Chest = () => {
   
     <>
       <style>{style}</style>
-      <div className="chest-container">
-        <h1 className="main-title">Chest Exercises</h1>
-        {Object.entries(ChestExercises).map(([section, exercises]) => (
+      <div className="calves-container">
+        <h1 className="main-title">Calves Exercises</h1>
+        {Object.entries(CalvesExercises).map(([section, exercises]) => (
           <ExerciseSection
             key={section}
             title={section}
@@ -315,4 +322,4 @@ const Chest = () => {
   );
 };
 
-export default Chest;
+export default Calves;

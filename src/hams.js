@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactPlayer from 'react-player';
 
 const style = `
-.chest-container {
+.hamstring-container {
   background-color:rgb(6, 6, 6);
   color: white;
   min-height: 30vh;  /* Increased height */
@@ -21,7 +21,7 @@ const style = `
  /* Allows scrolling when the content exceeds the container's size */
 }
 
-.chest-container::-webkit-scrollbar {
+.hamstring-container::-webkit-scrollbar {
   display: none;                 /* Chrome, Safari */
 }
 
@@ -36,8 +36,9 @@ const style = `
 .exercise-section {
   margin-bottom: 60px;
   margin-right: 60px;
-
 }
+
+
 
 .section-title {
   font-size: 3.0rem;
@@ -63,7 +64,7 @@ const style = `
   transform: scale(1.02);
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
 }
-  
+
 .color-circle {
   width: 50px;
   height: 40px;
@@ -263,26 +264,33 @@ const ExerciseSection = ({ title, exercises, onExerciseClick }) => (
 
 
 
-const Chest = () => {
+const Hams= () => {
 
   const [selectedExercise, setSelectedExercise] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
 
-  const ChestExercises = {
-        "Upper Chest": [
-      { name: "Incline Dumbbell Press", color: "#ffff00" , videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared" , effect:"3"}, // yellow
-      { name: "Incline Barbell Press", color: "#ffff00", videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'4'},  // yellow
-    ],
-    "Middle Chest": [
-      { name: "Flat Bench Press", color: "#16e98b",videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'4' },       // green
-      { name: "Flat Barbell Press", color: "#16e98b",videoUrl:"https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'3'},     // green
-    ],
-    "Lower Chest": [
-      { name: "Decline dumbbell press", color: "#ff0000",videoUrl:"https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'5'}, // red
-      { name: "Decline cable flies", color: "#ff0000", videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'4' },    // red
-    ],
+  const HamstringExercises = {
+    
+        "": [
+        { name: "Seated Leg Curl", color: "#ffff00", videoUrl: "https://youtu.be/Z57CtFmRMxI", effect: "3" },     // yellow
+        { name: "Lying Leg Curl", color: "#ffff00", videoUrl: "https://youtu.be/1Tq3QdYUuHs", effect: "4" },       // yellow
+        { name: "Standing Cable Leg Curl", color: "#16e98b", videoUrl: "https://youtu.be/kOJ0dQzOibY", effect: "4" } // green
+        ],
 
-  };
+        " ": [
+        { name: "Glute Ham Raise", color: "#ff0000", videoUrl: "https://youtu.be/WJ4wO9yH-cQ", effect: "5" },       // red
+        { name: "Swiss Ball Leg Curl", color: "#ff0000", videoUrl: "https://youtu.be/OAPJaJ3j9RY", effect: "4" },   // red
+        { name: "Single-Leg Dumbbell Deadlift", color: "#16e98b", videoUrl: "https://youtu.be/A1vB0syNVzQ", effect: "4" } // green
+        ],
+
+        "  ": [
+        { name: "Romanian Deadlift (Barbell)", color: "#ff0000", videoUrl: "https://youtu.be/2SHsk9AzdjA", effect: "5" },     // red
+        { name: "Good Mornings", color: "#16e98b", videoUrl: "https://youtu.be/vx7dcfvwW_I", effect: "3" },                   // green
+        { name: "Kettlebell Swings", color: "#ffff00", videoUrl: "https://youtu.be/YSx0A9WyN9g", effect: "4" }                // yellow
+        ]
+
+
+    };
 
   const handleExerciseClick = (exercise) => {
     setSelectedExercise(exercise);
@@ -295,9 +303,9 @@ const Chest = () => {
   
     <>
       <style>{style}</style>
-      <div className="chest-container">
-        <h1 className="main-title">Chest Exercises</h1>
-        {Object.entries(ChestExercises).map(([section, exercises]) => (
+      <div className="hamstring-container">
+        <h1 className="main-title">hamstring Exercises</h1>
+        {Object.entries(HamstringExercises).map(([section, exercises]) => (
           <ExerciseSection
             key={section}
             title={section}
@@ -315,4 +323,4 @@ const Chest = () => {
   );
 };
 
-export default Chest;
+export default Hams;

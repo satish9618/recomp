@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactPlayer from 'react-player';
 
 const style = `
-.chest-container {
+.shoulder-container {
   background-color:rgb(6, 6, 6);
   color: white;
   min-height: 30vh;  /* Increased height */
@@ -21,7 +21,7 @@ const style = `
  /* Allows scrolling when the content exceeds the container's size */
 }
 
-.chest-container::-webkit-scrollbar {
+.shoulder-container::-webkit-scrollbar {
   display: none;                 /* Chrome, Safari */
 }
 
@@ -63,7 +63,7 @@ const style = `
   transform: scale(1.02);
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
 }
-  
+
 .color-circle {
   width: 50px;
   height: 40px;
@@ -263,24 +263,24 @@ const ExerciseSection = ({ title, exercises, onExerciseClick }) => (
 
 
 
-const Chest = () => {
+const Shoulder = () => {
 
   const [selectedExercise, setSelectedExercise] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
 
-  const ChestExercises = {
-        "Upper Chest": [
-      { name: "Incline Dumbbell Press", color: "#ffff00" , videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared" , effect:"3"}, // yellow
-      { name: "Incline Barbell Press", color: "#ffff00", videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'4'},  // yellow
-    ],
-    "Middle Chest": [
-      { name: "Flat Bench Press", color: "#16e98b",videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'4' },       // green
-      { name: "Flat Barbell Press", color: "#16e98b",videoUrl:"https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'3'},     // green
-    ],
-    "Lower Chest": [
-      { name: "Decline dumbbell press", color: "#ff0000",videoUrl:"https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'5'}, // red
-      { name: "Decline cable flies", color: "#ff0000", videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'4' },    // red
-    ],
+  const ShoulderExercises = {
+       "Anterior Deltoid": [
+        { name: "Front Dumbbell Raise", color: "#ffff00", videoUrl: "https://youtu.be/-t7fuZ0KhDA", effect: "3" },  // yellow
+        { name: "Barbell Overhead Press", color: "#ffff00", videoUrl: "https://youtu.be/0JfYxMRsUCQ", effect: "4" } // yellow
+        ],
+        "Lateral Deltoid": [
+        { name: "Dumbbell Lateral Raise", color: "#16e98b", videoUrl: "https://youtu.be/3VcKaXpzqRo", effect: "4" }, // green
+        { name: "Cable Lateral Raise", color: "#16e98b", videoUrl: "https://youtu.be/JrRZ9CLuNNs", effect: "3" }     // green
+        ],
+        "Posterior Deltoid": [
+        { name: "Rear Delt Fly", color: "#ff0000", videoUrl: "https://youtu.be/pYcpY20QaE8", effect: "5" },          // red
+        { name: "Reverse Pec Deck", color: "#ff0000", videoUrl: "https://youtu.be/Iwyvozckjak", effect: "4" }       // red
+        ]
 
   };
 
@@ -295,9 +295,9 @@ const Chest = () => {
   
     <>
       <style>{style}</style>
-      <div className="chest-container">
-        <h1 className="main-title">Chest Exercises</h1>
-        {Object.entries(ChestExercises).map(([section, exercises]) => (
+      <div className="shoulder-container">
+        <h1 className="main-title">Shoulder Exercises</h1>
+        {Object.entries(ShoulderExercises).map(([section, exercises]) => (
           <ExerciseSection
             key={section}
             title={section}
@@ -315,4 +315,4 @@ const Chest = () => {
   );
 };
 
-export default Chest;
+export default Shoulder;

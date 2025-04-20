@@ -50,7 +50,17 @@ import FOREARMS from './muscles/forearms.svg'
 import GLUTES from './muscles/glutes.svg'
 
 import Chest from './chest';
-
+import Shoulder from './shoulders'
+import Abs from './abs'
+import Traps from './traps'
+import Biceps from './biceps'
+import Forearm from './forearms'
+import Legs from './legs'
+import Back from './back'
+import Tricep from './tricep'
+import Glutes from './glutes'
+import Hams from './hams'
+import Calves from './calves'
 
 
 
@@ -837,11 +847,69 @@ function Workout() {
       </div>
       
       {selectedMuscle === CHESTSVG && (
-     <div className="move-down-container" style={{ position: 'absolute', left: '120px', top: '330px' }}>
-        <Chest />
-      </div>
-
+        <div className="move-down-container" style={{ position: 'absolute', left: '120px', top: '330px' }}>
+          <Chest />
+        </div>
       )}
+
+      {selectedMuscle === SHOULDERSSVG && (
+        <div className="move-down-container" style={{ position: 'absolute', left: '120px', top: '330px' }}>
+          <Shoulder/>
+        </div>
+      )}
+
+      {selectedMuscle === ABS && (
+        <div className="move-down-container" style={{ position: 'absolute', left: '120px', top: '330px' }}>
+          <Abs/>
+        </div>
+      )}
+      {selectedMuscle === TRAPSSVG && (
+        <div className="move-down-container" style={{ position: 'absolute', left: '120px', top: '330px' }}>
+          <Traps/>
+        </div>
+      )}
+      {selectedMuscle === BICEPS && (
+        <div className="move-down-container" style={{ position: 'absolute', left: '120px', top: '330px' }}>
+          <Biceps/>
+        </div>
+      )}
+      {selectedMuscle === FOREARMS && (
+        <div className="move-down-container" style={{ position: 'absolute', left: '120px', top: '330px' }}>
+          <Forearm/>
+        </div>
+      )}
+      {selectedMuscle === QUADS && (
+        <div className="move-down-container" style={{ position: 'absolute', left: '120px', top: '330px' }}>
+          <Legs/>
+        </div>
+      )}
+      {selectedMuscle === BACK && (
+        <div className="move-down-container" style={{ position: 'absolute', left: '120px', top: '330px' }}>
+          <Back/>
+        </div>
+      )}
+      {selectedMuscle === TRICEPSSVG && (
+        <div className="move-down-container" style={{ position: 'absolute', left: '120px', top: '330px' }}>
+          <Tricep/>
+        </div>
+      )}
+      {selectedMuscle === GLUTES && (
+        <div className="move-down-container" style={{ position: 'absolute', left: '120px', top: '330px' }}>
+          <Glutes/>
+        </div>
+      )}
+      {selectedMuscle === HAMSTRINGS && (
+        <div className="move-down-container" style={{ position: 'absolute', left: '120px', top: '330px' }}>
+          <Hams/>
+        </div>
+      )}
+      {selectedMuscle === CALVES && (
+        <div className="move-down-container" style={{ position: 'absolute', left: '120px', top: '330px' }}>
+          <Calves/>
+        </div>
+      )}
+
+      
 
       </div>
 

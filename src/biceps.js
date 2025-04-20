@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReactPlayer from 'react-player';
 
 const style = `
-.chest-container {
+.bicep-container {
   background-color:rgb(6, 6, 6);
   color: white;
   min-height: 30vh;  /* Increased height */
@@ -21,7 +21,7 @@ const style = `
  /* Allows scrolling when the content exceeds the container's size */
 }
 
-.chest-container::-webkit-scrollbar {
+.bicep-container::-webkit-scrollbar {
   display: none;                 /* Chrome, Safari */
 }
 
@@ -63,7 +63,7 @@ const style = `
   transform: scale(1.02);
   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
 }
-  
+
 .color-circle {
   width: 50px;
   height: 40px;
@@ -263,24 +263,30 @@ const ExerciseSection = ({ title, exercises, onExerciseClick }) => (
 
 
 
-const Chest = () => {
+const Biceps = () => {
 
   const [selectedExercise, setSelectedExercise] = useState(null);
   const [modalVisible, setModalVisible] = useState(false);
 
-  const ChestExercises = {
-        "Upper Chest": [
-      { name: "Incline Dumbbell Press", color: "#ffff00" , videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared" , effect:"3"}, // yellow
-      { name: "Incline Barbell Press", color: "#ffff00", videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'4'},  // yellow
-    ],
-    "Middle Chest": [
-      { name: "Flat Bench Press", color: "#16e98b",videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'4' },       // green
-      { name: "Flat Barbell Press", color: "#16e98b",videoUrl:"https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'3'},     // green
-    ],
-    "Lower Chest": [
-      { name: "Decline dumbbell press", color: "#ff0000",videoUrl:"https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'5'}, // red
-      { name: "Decline cable flies", color: "#ff0000", videoUrl: "https://youtu.be/5CECBjd7HLQ?feature=shared", effect :'4' },    // red
-    ],
+  const BicepExercises = {
+    
+        "Short Head Biceps": [
+        { name: "Hammer Curl", color: "#16e98b", videoUrl: "https://youtu.be/zC3nLlEvin4", effect: "4" },            // green
+        { name: "Concentration Curl", color: "#ff0000", videoUrl: "https://youtu.be/ul2RzPnnP6g", effect: "5" },      // red
+        { name: "Cable Curl", color: "#ff0000", videoUrl: "https://youtu.be/dWjTdr5kLAg", effect: "4" }               // red
+        ],
+        "Long Head Biceps": [
+        { name: "Dumbbell Bicep Curl", color: "#ffff00", videoUrl: "https://youtu.be/ykJmrZ5v0Oo", effect: "3" },       // yellow
+        { name: "Barbell Curl", color: "#ffff00", videoUrl: "https://youtu.be/kwG2ipFRgfo", effect: "4" },              // yellow
+        { name: "Preacher Curl", color: "#16e98b", videoUrl: "https://youtu.be/3njhFn4DSr8", effect: "3" }             // green
+        ],
+        "Brachialis (Brachii)": [
+        { name: "Zottman Curl", color: "#ff0000", videoUrl: "https://youtu.be/cfPZ3bYctug", effect: "5" },             // red
+        { name: "Incline Dumbbell Curl", color: "#16e98b", videoUrl: "https://youtu.be/F_0YYjj6dHk", effect: "4" },      // green
+        { name: "Reverse Curl", color: "#ffff00", videoUrl: "https://youtu.be/4r6zA3oB1Vw", effect: "3" },              // yellow
+        { name: "Barbell Reverse Curl", color: "#ffff00", videoUrl: "https://youtu.be/k3e0u8mwLXM", effect: "3" }       // yellow
+        ]
+
 
   };
 
@@ -295,9 +301,9 @@ const Chest = () => {
   
     <>
       <style>{style}</style>
-      <div className="chest-container">
-        <h1 className="main-title">Chest Exercises</h1>
-        {Object.entries(ChestExercises).map(([section, exercises]) => (
+      <div className="bicep-container">
+        <h1 className="main-title">Bicep Exercises</h1>
+        {Object.entries(BicepExercises).map(([section, exercises]) => (
           <ExerciseSection
             key={section}
             title={section}
@@ -315,4 +321,4 @@ const Chest = () => {
   );
 };
 
-export default Chest;
+export default Biceps;
