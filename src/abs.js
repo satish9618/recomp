@@ -55,7 +55,7 @@ const style = `
   margin-bottom: 25px;
   height: 100px;
   width: 80%;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; 
 }
 
 .exercise-item:hover {
@@ -270,16 +270,16 @@ const Abs = () => {
 
   const AbsExercises = {
     "Upper Abs": [
-      { name: "Crunches", color: "#ffff00", videoUrl: "https://youtu.be/Xyd_fa5zoEU", effect: "3" }, // yellow
-      { name: "Cable Crunch", color: "#ffff00", videoUrl: "https://youtu.be/4Su3kQ9e1P8", effect: "4" } // yellow
+      { name: "Crunches", color: "#a23dc2", videoUrl: "https://youtu.be/Xyd_fa5zoEU", effect: "3" }, // yellow
+      { name: "Cable Crunch", color: "#a23dc2", videoUrl: "https://youtu.be/4Su3kQ9e1P8", effect: "4" } // yellow
     ],
     "Lower Abs": [
-      { name: "Leg Raises", color: "#16e98b", videoUrl: "https://youtu.be/l4kQd9eWclE", effect: "4" }, // green
-      { name: "Reverse Crunches", color: "#16e98b", videoUrl: "https://youtu.be/Hyv-f4xplFA", effect: "3" } // green
+      { name: "Leg Raises", color: "#ff0000", videoUrl: "https://youtu.be/l4kQd9eWclE", effect: "4" }, // green
+      { name: "Reverse Crunches", color: "#ff0000", videoUrl: "https://youtu.be/Hyv-f4xplFA", effect: "3" } // green
     ],
     "Obliques": [
-      { name: "Russian Twists", color: "#ff0000", videoUrl: "https://youtu.be/wkD8rjkodUI", effect: "5" }, // red
-      { name: "Side Plank with Hip Dips", color: "#ff0000", videoUrl: "https://youtu.be/1f8yoFFdkcY", effect: "4" } // red
+      { name: "Russian Twists", color: "#3ec16a", videoUrl: "https://youtu.be/wkD8rjkodUI", effect: "5" }, // red
+      { name: "Side Plank with Hip Dips", color: "#3ec16a", videoUrl: "https://youtu.be/1f8yoFFdkcY", effect: "4" } // red
     ]
   };
   

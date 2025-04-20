@@ -65,7 +65,7 @@ const style = `
 }
 
 .color-circle {
-  width: 50px;
+  width: 50px; 
   height: 40px;
   border: none;
   border-radius: 500%;
@@ -271,15 +271,15 @@ const Glutes = () => {
   const GlutesExercises = {
     
         "": [
-            { name: "Barbell Hip Thrust", color: "#ff0000", videoUrl: "https://youtu.be/LM8XHLYJoYs", effect: "5" },           // red
-            { name: "Glute Bridge", color: "#16e98b", videoUrl: "https://youtu.be/m2Zx-57cSok", effect: "3" },                 // green
-            { name: "Cable Kickbacks", color: "#ffff00", videoUrl: "https://youtu.be/1bVY5D9Z2tM", effect: "4" }, // green
+            { name: "Barbell Hip Thrust", color: "#b41ce3", videoUrl: "https://youtu.be/LM8XHLYJoYs", effect: "5" },           // red
+            { name: "Glute Bridge", color: "#b41ce3", videoUrl: "https://youtu.be/m2Zx-57cSok", effect: "3" },                 // green
+            { name: "Cable Kickbacks", color: "#b41ce3", videoUrl: "https://youtu.be/1bVY5D9Z2tM", effect: "4" }, // green
         ],
 
         " ": [
-            { name: "Dumbbell Romanian Deadlifts", color: "#ff0000", videoUrl: "https://youtu.be/ytGaGIn3SjE", effect: "4" },  // red
-            { name: "Step-Ups", color: "#16e98b", videoUrl: "https://youtu.be/JQgrzF1v9is", effect: "3" },                     // green
-            { name: "Bulgarian Split Squats", color: "#ffff00", videoUrl: "https://youtu.be/2C-uNgKwPLE", effect: "4" }                    // green
+            { name: "Dumbbell Romanian Deadlifts", color: "#b41ce3", videoUrl: "https://youtu.be/ytGaGIn3SjE", effect: "4" },  // red
+            { name: "Step-Ups", color: "#b41ce3", videoUrl: "https://youtu.be/JQgrzF1v9is", effect: "3" },                     // green
+            { name: "Bulgarian Split Squats", color: "#b41ce3", videoUrl: "https://youtu.be/2C-uNgKwPLE", effect: "4" }                    // green
         ],
 
 

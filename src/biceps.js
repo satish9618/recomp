@@ -65,7 +65,7 @@ const style = `
 }
 
 .color-circle {
-  width: 50px;
+  width: 50px; 
   height: 40px;
   border: none;
   border-radius: 500%;
@@ -271,20 +271,20 @@ const Biceps = () => {
   const BicepExercises = {
     
         "Short Head Biceps": [
-        { name: "Hammer Curl", color: "#16e98b", videoUrl: "https://youtu.be/zC3nLlEvin4", effect: "4" },            // green
-        { name: "Concentration Curl", color: "#ff0000", videoUrl: "https://youtu.be/ul2RzPnnP6g", effect: "5" },      // red
-        { name: "Cable Curl", color: "#ff0000", videoUrl: "https://youtu.be/dWjTdr5kLAg", effect: "4" }               // red
+        { name: "Hammer Curl", color: "#ffff00", videoUrl: "https://youtu.be/zC3nLlEvin4", effect: "4" },            // green
+        { name: "Concentration Curl", color: "#ffff00", videoUrl: "https://youtu.be/ul2RzPnnP6g", effect: "5" },      // red
+        { name: "Cable Curl", color: "#ffff00", videoUrl: "https://youtu.be/dWjTdr5kLAg", effect: "4" }               // red
         ],
         "Long Head Biceps": [
-        { name: "Dumbbell Bicep Curl", color: "#ffff00", videoUrl: "https://youtu.be/ykJmrZ5v0Oo", effect: "3" },       // yellow
-        { name: "Barbell Curl", color: "#ffff00", videoUrl: "https://youtu.be/kwG2ipFRgfo", effect: "4" },              // yellow
-        { name: "Preacher Curl", color: "#16e98b", videoUrl: "https://youtu.be/3njhFn4DSr8", effect: "3" }             // green
+        { name: "Dumbbell Bicep Curl", color: "#ff0000", videoUrl: "https://youtu.be/ykJmrZ5v0Oo", effect: "3" },       // yellow
+        { name: "Barbell Curl", color: "#ff0000", videoUrl: "https://youtu.be/kwG2ipFRgfo", effect: "4" },              // yellow
+        { name: "Preacher Curl", color: "#ff0000", videoUrl: "https://youtu.be/3njhFn4DSr8", effect: "3" }             // green
         ],
         "Brachialis (Brachii)": [
-        { name: "Zottman Curl", color: "#ff0000", videoUrl: "https://youtu.be/cfPZ3bYctug", effect: "5" },             // red
+        { name: "Zottman Curl", color: "#16e98b", videoUrl: "https://youtu.be/cfPZ3bYctug", effect: "5" },             // red
         { name: "Incline Dumbbell Curl", color: "#16e98b", videoUrl: "https://youtu.be/F_0YYjj6dHk", effect: "4" },      // green
-        { name: "Reverse Curl", color: "#ffff00", videoUrl: "https://youtu.be/4r6zA3oB1Vw", effect: "3" },              // yellow
-        { name: "Barbell Reverse Curl", color: "#ffff00", videoUrl: "https://youtu.be/k3e0u8mwLXM", effect: "3" }       // yellow
+        { name: "Reverse Curl", color: "#16e98b", videoUrl: "https://youtu.be/4r6zA3oB1Vw", effect: "3" },              // yellow
+        { name: "Barbell Reverse Curl", color: "#16e98b", videoUrl: "https://youtu.be/k3e0u8mwLXM", effect: "3" }       // yellow
         ]
 
 

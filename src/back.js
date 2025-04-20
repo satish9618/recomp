@@ -66,7 +66,7 @@ const style = `
 
 .color-circle {
   width: 50px;
-  height: 40px;
+  height: 40px; 
   border: none;
   border-radius: 500%;
   margin-right: 15px;
@@ -271,21 +271,21 @@ const Back = () => {
   const BackExercises = {
     
         "Lats": [
-        { name: "Pull-Ups", color: "#ffff00", videoUrl: "https://youtu.be/eGo4IYlbE5g", effect: "3" },             // yellow
-        { name: "Lat Pulldown", color: "#ffff00", videoUrl: "https://youtu.be/CAwf7n6Luuc", effect: "4" },         // yellow
+        { name: "Pull-Ups", color: "#16e98b", videoUrl: "https://youtu.be/eGo4IYlbE5g", effect: "3" },             // yellow
+        { name: "Lat Pulldown", color: "#16e98b", videoUrl: "https://youtu.be/CAwf7n6Luuc", effect: "4" },         // yellow
         { name: "Straight Arm Pulldown", color: "#16e98b", videoUrl: "https://youtu.be/GkC1Ll8-1kI", effect: "4" } // green
         ],
 
         "Trapezius": [
         { name: "Barbell Shrugs", color: "#ff0000", videoUrl: "https://youtu.be/cJRVVxmytaM", effect: "5" },        // red
         { name: "Dumbbell Shrugs", color: "#ff0000", videoUrl: "https://youtu.be/9efgcAjQe7E", effect: "4" },       // red
-        { name: "Face Pulls", color: "#16e98b", videoUrl: "https://youtu.be/rep-qVOkqgk", effect: "4" }             // green
+        { name: "Face Pulls", color: "#ff0000", videoUrl: "https://youtu.be/rep-qVOkqgk", effect: "4" }             // green
         ],
 
         "Teres Major & Minor": [
-        { name: "Incline Y Raise", color: "#ff0000", videoUrl: "https://youtu.be/0zPj7tV6L44", effect: "5" },        // red
-        { name: "Reverse Cable Fly", color: "#16e98b", videoUrl: "https://youtu.be/mwRl9Gzv7O4", effect: "3" },     // green
-        { name: "Cable Scapular Depression", color: "#ffff00", videoUrl: "https://youtu.be/JJvYigv31sM", effect: "4" } // yellow
+        { name: "Incline Y Raise", color: "#ae2bd4", videoUrl: "https://youtu.be/0zPj7tV6L44", effect: "5" },        // red
+        { name: "Reverse Cable Fly", color: "#ae2bd4", videoUrl: "https://youtu.be/mwRl9Gzv7O4", effect: "3" },     // green
+        { name: "Cable Scapular Depression", color: "#ae2bd4", videoUrl: "https://youtu.be/JJvYigv31sM", effect: "4" } // yellow
         ]
 
     };

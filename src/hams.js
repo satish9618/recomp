@@ -68,7 +68,7 @@ const style = `
 .color-circle {
   width: 50px;
   height: 40px;
-  border: none;
+  border: none; 
   border-radius: 500%;
   margin-right: 15px;
   cursor: pointer;
@@ -272,21 +272,21 @@ const Hams= () => {
   const HamstringExercises = {
     
         "": [
-        { name: "Seated Leg Curl", color: "#ffff00", videoUrl: "https://youtu.be/Z57CtFmRMxI", effect: "3" },     // yellow
-        { name: "Lying Leg Curl", color: "#ffff00", videoUrl: "https://youtu.be/1Tq3QdYUuHs", effect: "4" },       // yellow
-        { name: "Standing Cable Leg Curl", color: "#16e98b", videoUrl: "https://youtu.be/kOJ0dQzOibY", effect: "4" } // green
+        { name: "Seated Leg Curl", color: "#18e774", videoUrl: "https://youtu.be/Z57CtFmRMxI", effect: "3" },     // yellow
+        { name: "Lying Leg Curl", color: "#18e774", videoUrl: "https://youtu.be/1Tq3QdYUuHs", effect: "4" },       // yellow
+        { name: "Standing Cable Leg Curl", color: "#18e774", videoUrl: "https://youtu.be/kOJ0dQzOibY", effect: "4" } // green
         ],
 
         " ": [
-        { name: "Glute Ham Raise", color: "#ff0000", videoUrl: "https://youtu.be/WJ4wO9yH-cQ", effect: "5" },       // red
-        { name: "Swiss Ball Leg Curl", color: "#ff0000", videoUrl: "https://youtu.be/OAPJaJ3j9RY", effect: "4" },   // red
-        { name: "Single-Leg Dumbbell Deadlift", color: "#16e98b", videoUrl: "https://youtu.be/A1vB0syNVzQ", effect: "4" } // green
+        { name: "Glute Ham Raise", color: "#18e774", videoUrl: "https://youtu.be/WJ4wO9yH-cQ", effect: "5" },       // red
+        { name: "Swiss Ball Leg Curl", color: "#18e774", videoUrl: "https://youtu.be/OAPJaJ3j9RY", effect: "4" },   // red
+        { name: "Single-Leg Dumbbell Deadlift", color: "#18e774", videoUrl: "https://youtu.be/A1vB0syNVzQ", effect: "4" } // green
         ],
 
         "  ": [
-        { name: "Romanian Deadlift (Barbell)", color: "#ff0000", videoUrl: "https://youtu.be/2SHsk9AzdjA", effect: "5" },     // red
-        { name: "Good Mornings", color: "#16e98b", videoUrl: "https://youtu.be/vx7dcfvwW_I", effect: "3" },                   // green
-        { name: "Kettlebell Swings", color: "#ffff00", videoUrl: "https://youtu.be/YSx0A9WyN9g", effect: "4" }                // yellow
+        { name: "Romanian Deadlift (Barbell)", color: "#18e774", videoUrl: "https://youtu.be/2SHsk9AzdjA", effect: "5" },     // red
+        { name: "Good Mornings", color: "#18e774", videoUrl: "https://youtu.be/vx7dcfvwW_I", effect: "3" },                   // green
+        { name: "Kettlebell Swings", color: "#18e774", videoUrl: "https://youtu.be/YSx0A9WyN9g", effect: "4" }                // yellow
         ]
 
 

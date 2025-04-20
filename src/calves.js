@@ -68,7 +68,7 @@ const style = `
   width: 50px;
   height: 40px;
   border: none;
-  border-radius: 500%;
+  border-radius: 500%; 
   margin-right: 15px;
   cursor: pointer;
   background: transparent;
@@ -271,21 +271,21 @@ const Calves= () => {
   const CalvesExercises = {
     
         "": [
-        { name: "Seated Calf Raise (Machine)", color: "#ffff00", videoUrl: "https://youtu.be/YyvSfVjQeL0", effect: "3" },     // yellow
-        { name: "Smith Machine Seated Calf Raise", color: "#ffff00", videoUrl: "https://youtu.be/TJ4QxGjt_Zc", effect: "4" }, // yellow
-        { name: "Dumbbell Seated Calf Raise", color: "#16e98b", videoUrl: "https://youtu.be/OU_6U2Qz3XI", effect: "4" }       // green
+        { name: "Seated Calf Raise (Machine)", color: "#ff00e6", videoUrl: "https://youtu.be/YyvSfVjQeL0", effect: "3" },     // yellow
+        { name: "Smith Machine Seated Calf Raise", color: "#ff00e6", videoUrl: "https://youtu.be/TJ4QxGjt_Zc", effect: "4" }, // yellow
+        { name: "Dumbbell Seated Calf Raise", color: "#ff00e6", videoUrl: "https://youtu.be/OU_6U2Qz3XI", effect: "4" }       // green
         ],
 
         " ": [
-        { name: "Standing Calf Raise (Bodyweight)", color: "#ff0000", videoUrl: "https://youtu.be/I8nZBYy4l54", effect: "5" },  // red
-        { name: "Barbell Standing Calf Raise", color: "#ff0000", videoUrl: "https://youtu.be/5F1b9yQGajM", effect: "4" },       // red
-        { name: "Machine Standing Calf Raise", color: "#16e98b", videoUrl: "https://youtu.be/wLrVM7S01Xc", effect: "4" }        // green
+        { name: "Standing Calf Raise (Bodyweight)", color: "#ff00e6", videoUrl: "https://youtu.be/I8nZBYy4l54", effect: "5" },  // red
+        { name: "Barbell Standing Calf Raise", color: "#ff00e6", videoUrl: "https://youtu.be/5F1b9yQGajM", effect: "4" },       // red
+        { name: "Machine Standing Calf Raise", color: "#ff00e6", videoUrl: "https://youtu.be/wLrVM7S01Xc", effect: "4" }        // green
         ],
 
         "  ": [
-        { name: "Donkey Calf Raise", color: "#ff0000", videoUrl: "https://youtu.be/68QbFZME5vw", effect: "5" },                // red
-        { name: "Jump Rope", color: "#16e98b", videoUrl: "https://youtu.be/c4DAnQ6DtF8", effect: "3" },                        // green
-        { name: "Single-Leg Calf Raise", color: "#ffff00", videoUrl: "https://youtu.be/TuNqJpjD30U", effect: "4" }             // yellow
+        { name: "Donkey Calf Raise", color: "#ff00e6", videoUrl: "https://youtu.be/68QbFZME5vw", effect: "5" },                // red
+        { name: "Jump Rope", color: "#ff00e6", videoUrl: "https://youtu.be/c4DAnQ6DtF8", effect: "3" },                        // green
+        { name: "Single-Leg Calf Raise", color: "#ff00e6", videoUrl: "https://youtu.be/TuNqJpjD30U", effect: "4" }             // yellow
         ]
 
 

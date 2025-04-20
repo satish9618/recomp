@@ -69,7 +69,7 @@ const style = `
   height: 40px;
   border: none;
   border-radius: 500%;
-  margin-right: 15px;
+  margin-right: 15px; 
   cursor: pointer;
   background: transparent;
 }
@@ -271,21 +271,21 @@ const Tricep = () => {
   const TricepExercises = {
     
     "Long Head ": [
-    { name: "Overhead Dumbbell Extension", color: "#ffff00", videoUrl: "https://youtu.be/YbX7Wd8jQ-Q", effect: "3" },     // yellow
-    { name: "EZ Bar Overhead Extension", color: "#ffff00", videoUrl: "https://youtu.be/KAK5_A6mQG8", effect: "4" },       // yellow
-    { name: "Cable Overhead Extension", color: "#16e98b", videoUrl: "https://youtu.be/-xaSfaeIav8", effect: "4" }         // green
+    { name: "Overhead Dumbbell Extension", color: "#ff0029", videoUrl: "https://youtu.be/YbX7Wd8jQ-Q", effect: "3" },     // yellow
+    { name: "EZ Bar Overhead Extension", color: "#ff0029", videoUrl: "https://youtu.be/KAK5_A6mQG8", effect: "4" },       // yellow
+    { name: "Cable Overhead Extension", color: "#ff0029", videoUrl: "https://youtu.be/-xaSfaeIav8", effect: "4" }         // green
     ],
 
     "Lateral Head ": [
-    { name: "Tricep Pushdown (Straight Bar)", color: "#ff0000", videoUrl: "https://youtu.be/2-LAMcpzODU", effect: "5" },  // red
-    { name: "Tricep Kickbacks", color: "#ff0000", videoUrl: "https://youtu.be/6SS1-ULrWRw", effect: "4" },                // red
-    { name: "Rope Pushdowns", color: "#16e98b", videoUrl: "https://youtu.be/6kALZikXxLc", effect: "4" }                   // green
+    { name: "Tricep Pushdown (Straight Bar)", color: "#faff00", videoUrl: "https://youtu.be/2-LAMcpzODU", effect: "5" },  // red
+    { name: "Tricep Kickbacks", color: "#faff00", videoUrl: "https://youtu.be/6SS1-ULrWRw", effect: "4" },                // red
+    { name: "Rope Pushdowns", color: "#faff00", videoUrl: "https://youtu.be/6kALZikXxLc", effect: "4" }                   // green
     ],
 
     "Medial Head ": [
-    { name: "Close-Grip Bench Press", color: "#ff0000", videoUrl: "https://youtu.be/iHg0a7vQ6LA", effect: "5" },           // red
-    { name: "Reverse Grip Pushdowns", color: "#16e98b", videoUrl: "https://youtu.be/n1pkkjLkXG4", effect: "3" },           // green
-    { name: "Diamond Push-Ups", color: "#ffff00", videoUrl: "https://youtu.be/J0DnG1_S92I", effect: "4" }                  // yellow
+    { name: "Close-Grip Bench Press", color: "#00ff6c", videoUrl: "https://youtu.be/iHg0a7vQ6LA", effect: "5" },           // red
+    { name: "Reverse Grip Pushdowns", color: "#00ff6c", videoUrl: "https://youtu.be/n1pkkjLkXG4", effect: "3" },           // green
+    { name: "Diamond Push-Ups", color: "#00ff6c", videoUrl: "https://youtu.be/J0DnG1_S92I", effect: "4" }                  // yellow
     ]
 
 

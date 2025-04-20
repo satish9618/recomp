@@ -70,7 +70,7 @@ const style = `
   border: none;
   border-radius: 500%;
   margin-right: 15px;
-  cursor: pointer;
+  cursor: pointer; 
   background: transparent;
 }
 
@@ -271,16 +271,16 @@ const Traps = () => {
   const TrapsExercises = {
     
       " ": [
-        { name: "Dumbbell Shrugs", color: "#ffff00", videoUrl: "https://youtu.be/9efgcAjQe7E", effect: "3" },  // yellow
-        { name: "Barbell Shrugs", color: "#ffff00", videoUrl: "https://youtu.be/cJRVVxmytaM", effect: "4" }   // yellow
+        { name: "Dumbbell Shrugs", color: "#8900ff", videoUrl: "https://youtu.be/9efgcAjQe7E", effect: "3" },  // yellow
+        { name: "Barbell Shrugs", color: "#8900ff", videoUrl: "https://youtu.be/cJRVVxmytaM", effect: "4" }   // yellow
       ],
       "": [
-        { name: "Face Pulls", color: "#16e98b", videoUrl: "https://youtu.be/rep-qVOkqgk", effect: "4" },       // green
-        { name: "Reverse Cable Flys", color: "#16e98b", videoUrl: "https://youtu.be/mwRl9Gzv7O4", effect: "3" } // green
+        { name: "Face Pulls", color: "#8900ff", videoUrl: "https://youtu.be/rep-qVOkqgk", effect: "4" },       // green
+        { name: "Reverse Cable Flys", color: "#8900ff", videoUrl: "https://youtu.be/mwRl9Gzv7O4", effect: "3" } // green
       ],
       "  ": [
-        { name: "Incline Y Raise", color: "#ff0000", videoUrl: "https://youtu.be/0zPj7tV6L44", effect: "5" },  // red
-        { name: "Cable Scapular Depression", color: "#ff0000", videoUrl: "https://youtu.be/JJvYigv31sM", effect: "4" } // red
+        { name: "Incline Y Raise", color: "#8900ff", videoUrl: "https://youtu.be/0zPj7tV6L44", effect: "5" },  // red
+        { name: "Cable Scapular Depression", color: "#8900ff", videoUrl: "https://youtu.be/JJvYigv31sM", effect: "4" } // red
       ]
 
   };

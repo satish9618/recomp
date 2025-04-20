@@ -70,7 +70,7 @@ const style = `
   border: none;
   border-radius: 500%;
   margin-right: 15px;
-  cursor: pointer;
+  cursor: pointer; 
   background: transparent;
 }
 
@@ -270,14 +270,14 @@ const Legs = () => {
 
   const LegExercises = {
         "Quads": [
-    { name: "Barbell Back Squat", color: "#ffff00", videoUrl: "https://youtu.be/ultWZbUMPL8", effect: "5" },       // yellow
-    { name: "Leg Press", color: "#16e98b", videoUrl: "https://youtu.be/IZxyjW7MPJQ", effect: "4" },                // green
-    { name: "Bulgarian Split Squat", color: "#ff0000", videoUrl: "https://youtu.be/2C-uNgKwPLE", effect: "4" },    // red         // red
+    { name: "Barbell Back Squat", color: "#18e774", videoUrl: "https://youtu.be/ultWZbUMPL8", effect: "5" },       // yellow
+    { name: "Leg Press", color: "#18e774", videoUrl: "https://youtu.be/IZxyjW7MPJQ", effect: "4" },                // green
+    { name: "Bulgarian Split Squat", color: "#18e774", videoUrl: "https://youtu.be/2C-uNgKwPLE", effect: "4" },    // red         // red
     ],
     "Abductors": [
-    { name: "Cable Hip Abduction", color: "#16e98b", videoUrl: "https://youtu.be/GrZ6Rz0Cj7I", effect: "4" },       // green
-    { name: "Seated Abduction Machine", color: "#ffff00", videoUrl: "https://youtu.be/Eh00_rniF8E", effect: "3" },  // yellow
-    { name: "Standing Band Abduction", color: "#ff0000", videoUrl: "https://youtu.be/_h0G1-XZbYg", effect: "3" },   // red      // green
+    { name: "Cable Hip Abduction", color: "#ab1ee1", videoUrl: "https://youtu.be/GrZ6Rz0Cj7I", effect: "4" },       // green
+    { name: "Seated Abduction Machine", color: "#ab1ee1", videoUrl: "https://youtu.be/Eh00_rniF8E", effect: "3" },  // yellow
+    { name: "Standing Band Abduction", color: "#ab1ee1", videoUrl: "https://youtu.be/_h0G1-XZbYg", effect: "3" },   // red      // green
     ]
 
   };

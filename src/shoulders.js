@@ -66,7 +66,7 @@ const style = `
 
 .color-circle {
   width: 50px;
-  height: 40px;
+  height: 40px; 
   border: none;
   border-radius: 500%;
   margin-right: 15px;
@@ -270,16 +270,16 @@ const Shoulder = () => {
 
   const ShoulderExercises = {
        "Anterior Deltoid": [
-        { name: "Front Dumbbell Raise", color: "#ffff00", videoUrl: "https://youtu.be/-t7fuZ0KhDA", effect: "3" },  // yellow
-        { name: "Barbell Overhead Press", color: "#ffff00", videoUrl: "https://youtu.be/0JfYxMRsUCQ", effect: "4" } // yellow
+        { name: "Front Dumbbell Raise", color: "#50e51a", videoUrl: "https://youtu.be/-t7fuZ0KhDA", effect: "3" },  // yellow
+        { name: "Barbell Overhead Press", color: "#50e51a", videoUrl: "https://youtu.be/0JfYxMRsUCQ", effect: "4" } // yellow
         ],
         "Lateral Deltoid": [
-        { name: "Dumbbell Lateral Raise", color: "#16e98b", videoUrl: "https://youtu.be/3VcKaXpzqRo", effect: "4" }, // green
-        { name: "Cable Lateral Raise", color: "#16e98b", videoUrl: "https://youtu.be/JrRZ9CLuNNs", effect: "3" }     // green
+        { name: "Dumbbell Lateral Raise", color: "#ff0029", videoUrl: "https://youtu.be/3VcKaXpzqRo", effect: "4" }, // green
+        { name: "Cable Lateral Raise", color: "#ff0029", videoUrl: "https://youtu.be/JrRZ9CLuNNs", effect: "3" }     // green
         ],
         "Posterior Deltoid": [
-        { name: "Rear Delt Fly", color: "#ff0000", videoUrl: "https://youtu.be/pYcpY20QaE8", effect: "5" },          // red
-        { name: "Reverse Pec Deck", color: "#ff0000", videoUrl: "https://youtu.be/Iwyvozckjak", effect: "4" }       // red
+        { name: "Rear Delt Fly", color: "#2700ff", videoUrl: "https://youtu.be/pYcpY20QaE8", effect: "5" },          // red
+        { name: "Reverse Pec Deck", color: "#2700ff", videoUrl: "https://youtu.be/Iwyvozckjak", effect: "4" }       // red
         ]
 
   };
